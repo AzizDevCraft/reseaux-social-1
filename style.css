@@ -52,7 +52,7 @@ body {
 /* partie side bar */
 .content {
     padding: 0 15px;
-    max-width: 1050px;
+    max-width: 1350px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -102,6 +102,10 @@ body {
 }
 
 /* main content */
+
+main {
+    width: 100%;
+}
 
 .post {
     background: #fff;
@@ -223,4 +227,28 @@ aside .amis .right > p {
 
 aside .amis .right .ajout-amis p {
     font-size: 12px;
+}
+
+@media (min-width: 800px) {
+    .content {
+        display: flex;
+        gap: 30px;
+    }
+
+    .content .side-bar{
+        height: 100%;
+        width: 280px;
+    }
+
+    .content main {
+        width: 600px;
+    }
+
+    main .post2 {
+        display: block;
+    }
+
+    aside {
+        width: 400px;
+    }
 }
